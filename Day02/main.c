@@ -1,5 +1,7 @@
-int mian (void)
+ void ft_print_alphabet(void);
+
+int main (void)
 {
-  
-  return (0);
+    ft_print_alphabet();
+    return (0);
 }
