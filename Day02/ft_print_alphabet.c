@@ -1,11 +1,20 @@
-#include <stdio.h>
+#include <unistd.h>
 
-
-
-void ft_print_alphabet(void);
+void ft_print_alphabet(void)
 {
-  char c;
-  for(c = 'a'; c <= 'z'; ++c)
-  printf("%c ", c);
+    char c='a';
+    while (c <= 'z')
+    {
+        write(1, &c, 1);
+        c++;
+    }
 
+}
+
+int main (void)
+
+{
+    ft_print_alphabet();
+    return (0);
+    
 }
