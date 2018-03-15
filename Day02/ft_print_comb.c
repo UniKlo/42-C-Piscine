@@ -28,8 +28,13 @@ void	ft_print_comb(void)
 					ft_putchar(i);
 					ft_putchar(j);
 					ft_putchar(k);
-					ft_putchar(',');
-					ft_putchar(' ');
+					
+					if (i < '7')
+					{
+					
+					    ft_putchar(',');
+					    ft_putchar(' ');
+					}
 				}
 				k++;
 			}
